@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/grey_abstract"
+    android:padding="@dimen/normal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/large"
+        android:layout_height="@dimen/large"
+        android:gravity="center"
+        android:background="@drawable/portrait_boy"
+        android:layout_marginBottom="@dimen/normal">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textSize="@dimen/normal"
+            android:textColor="@color/spblack"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usertip"
+            android:id="@+id/edit1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/passwd"
+            android:textSize="@dimen/normal"
+            android:textColor="@color/spblack"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwdtip"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:id="@+id/edit2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/large">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="@dimen/normal"
+            android:id="@+id/loginbtn"
+            android:background="@drawable/btn_bg_solid"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/exit"
+            android:textSize="@dimen/normal"
+            android:id="@+id/exitbtn"
+            android:background="@drawable/btn_bg_solid"/>
+
+    </LinearLayout>
+</LinearLayout>

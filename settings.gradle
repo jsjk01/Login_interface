@@ -1,0 +1,2 @@
+rootProject.name='LXJ_DEMO_03'
+include ':app'
